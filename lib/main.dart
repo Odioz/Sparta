@@ -17,7 +17,7 @@ class Spartakiada extends StatelessWidget {
           appBar: AppBar(
             leading: Container(
               width: 100,
-              child: Image.asset('images/gps.png'),
+              child: Image.asset('images/ogps23.png'),
             ),
             title: Text('Спартакиада Намского ОГПС'),
             bottom: TabBar(
