@@ -61,27 +61,27 @@ class KalendarList extends StatelessWidget {
       itemCount: kalendar.length,
       itemBuilder: (context, i) {
         return Card(
-            margin: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-            color: Color.fromRGBO(24, 26, 27, 1),
-            child: Container(
-              child: ListTile(
-                  contentPadding: EdgeInsets.symmetric(horizontal: 10),
-                  title: Text(
-                      kalendar[i].data +
-                          '  ' +
-                          kalendar[i].vrema +
-                          '  ' +
-                          kalendar[i].vid,
-                      style: TextStyle(
-                          color: Color.fromRGBO(254, 182, 88, 1),
-                          fontWeight: FontWeight.bold)),
-                  trailing: Text(kalendar[i].mesto,
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold, color: Colors.white)),
-                  subtitle: Text(kalendar[i].komment,
-                      style:
-                          TextStyle(color: Color.fromRGBO(190, 185, 179, 1)))),
-            ));
+          margin: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+          color: Color.fromRGBO(24, 26, 27, 1),
+          child: Column(
+            children: [
+              ListTile(
+                title: Text(kalendar[i].data + '  ' + kalendar[i].vrema,
+                    style: TextStyle(
+                        color: Color.fromRGBO(254, 182, 88, 1),
+                        fontWeight: FontWeight.bold)),
+                subtitle: Text(kalendar[i].vid + '     ' + kalendar[i].mesto,
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold, color: Colors.white)),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                child: Text(kalendar[i].komment,
+                    style: TextStyle(color: Color.fromRGBO(190, 185, 179, 1))),
+              ),
+            ],
+          ),
+        );
       },
     ));
     // TODO: implement build
