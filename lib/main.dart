@@ -14,13 +14,17 @@ class Spartakiada extends StatelessWidget {
       home: DefaultTabController(
         length: 3,
         child: Scaffold(
+          backgroundColor: Color.fromRGBO(24, 26, 27, 1),
           appBar: AppBar(
             leading: Container(
-              width: 100,
-              child: Image.asset('images/ogps23.png'),
+              width: 50,
+              child: Image.asset('images/gps.png'), //логотип ГПС
             ),
-            title: Text('Спартакиада Намского ОГПС'),
+            title: Text('Спартакиада Намского ОГПС',
+                style: TextStyle(color: Color.fromRGBO(213, 179, 136, 1))),
             bottom: TabBar(
+              indicatorColor:
+                  Color.fromRGBO(10, 81, 131, 1), //цвет линии вкладки
               tabs: [
                 Tab(
                   text: 'Календарь',
@@ -33,7 +37,7 @@ class Spartakiada extends StatelessWidget {
                 ),
               ],
             ),
-            backgroundColor: Color.fromRGBO(255, 145, 3, 1),
+            backgroundColor: Color.fromRGBO(164, 93, 0, 1),
           ),
           body: TabBarView(
             children: [Tab1(), Tab2(), Tab3()],
