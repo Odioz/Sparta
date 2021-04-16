@@ -1,3 +1,4 @@
+// вкладка для показа протоколов
 import 'package:flutter/material.dart';
 
 class Tab3 extends StatelessWidget {
@@ -13,7 +14,8 @@ class TabMain extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         child: Center(
-      child: Text('Это третья вкладка'),
+      child: Text('Здесь будут протоколы соревнований',
+          style: TextStyle(color: Colors.white)),
     ));
   }
 }

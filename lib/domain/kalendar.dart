@@ -1,3 +1,4 @@
+// класс для календаря соревнований
 class Kalendar {
   String data;
   String vrema;

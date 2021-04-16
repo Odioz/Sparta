@@ -11,6 +11,7 @@ class Spartakiada extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(dividerColor: Color.fromRGBO(190, 185, 179, 1)),
       home: DefaultTabController(
         length: 3,
         child: Scaffold(
@@ -21,7 +22,7 @@ class Spartakiada extends StatelessWidget {
               child: Image.asset('images/gps.png'), //логотип ГПС
             ),
             title: Text('Спартакиада Намского ОГПС',
-                style: TextStyle(color: Color.fromRGBO(213, 179, 136, 1))),
+                style: TextStyle(color: Color.fromRGBO(254, 182, 88, 1))),
             bottom: TabBar(
               indicatorColor:
                   Color.fromRGBO(10, 81, 131, 1), //цвет линии вкладки
