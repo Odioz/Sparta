@@ -11,7 +11,7 @@ class Spartakiada extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(dividerColor: Color.fromRGBO(190, 185, 179, 1)),
+      theme: ThemeData(dividerColor: Color.fromRGBO(164, 93, 0, 1)),
       home: DefaultTabController(
         length: 3,
         child: Scaffold(

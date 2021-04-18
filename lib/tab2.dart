@@ -241,7 +241,7 @@ class TablicaList extends StatelessWidget {
             .map((tablica) => DataRow(cells: [
                   DataCell(Text(tablica.podrazd,
                       style: TextStyle(
-                          color: Color.fromRGBO(190, 185, 179, 1),
+                          color: Color.fromRGBO(255, 255, 255, 1),
                           fontSize: 16))),
                   DataCell(Text(tablica.vid1,
                       style: TextStyle(
@@ -277,11 +277,11 @@ class TablicaList extends StatelessWidget {
                           fontSize: 18))),
                   DataCell(Text(tablica.ochki,
                       style: TextStyle(
-                          color: Color.fromRGBO(190, 185, 179, 1),
+                          color: Color.fromRGBO(255, 255, 255, 1),
                           fontSize: 18))),
                   DataCell(Text(tablica.mesto,
                       style: TextStyle(
-                          color: Color.fromRGBO(190, 185, 179, 1),
+                          color: Color.fromRGBO(255, 255, 255, 1),
                           fontSize: 18))),
                 ]))
             .toList());
